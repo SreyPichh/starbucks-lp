@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  min-height: 100vh;
+  perspective: 1000px;
+}
+.c_header {
+  position: relative;
+  width: 100%;
+  /* min-height: 100vh; */
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .c_logo {
+  position: relative;
+  max-width: 80px;
+}
+header ul {
+  position: relative;
+  display: flex;
+}
+header ul li {
+  list-style: none;
+}
+header ul li a {
+  display: inline-block;
+  color: #333;
+  font-weight: 400;
+  margin-left: 40px;
+  text-decoration: none;
+}
+.content {
+  position:relative;
+  max-width: 100%;
+  padding: 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.c_textbox {
+  position: relative;
+  width: 100vw;
+}
+.c_textbox p {
+  position: relative;
+  max-width: 50vw;
+  margin-top: 30px;
+}
+.c_textbox h2 {
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.color_starbuck {
+  color: #017143;
+  font-weight: 600px;
+  font-size: 1.2em;
+}
+.c_textbox p {
+  color: #333;
+}
+.c_textbox a {
+  display: inline-block;
+  background-color: #017143;
+  color: #fff;
+  margin-top: 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 12px 22px;
+  letter-spacing: 1;
+}
+.content .c_imagebox {
+  width: 600px;
+  display: flex;
+  justify-content: flex-end;
+}
+.content .c_imagebox img {
+  max-width: 25vw;
+}
+.thumb {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  display: flex;
+  transform: translateX(-50%);
+}
+.thumb li {
+  list-style: none;
+  margin: 0 20px;
+  transition: all 0.5s;
+}
+.thumb li:hover {
+  transform: translateY(-15%);
+  cursor: pointer;
+}
+.thumb li img {
+  max-width: 60px;
+}
+.social_icon {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.social_icon li {
+  list-style: none;
+  margin: 10px 0;
+  transition: all 0.5s;
+  transform: scale(0.6);
+}
+.social_icon li:hover {
+  transform: translateY(-15%);
+}
+.social_icon li img {
+  cursor: pointer;
+  filter: invert(1);
+}
+.circle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #017143;
+  clip-path: circle(600px at right bottom);
+}
